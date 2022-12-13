@@ -1,0 +1,52 @@
+$textColorBlack:black;
+
+.everything {
+    font-size: 65%;
+    display: flex;
+    position: absolute;
+    top:80%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    @media(max-width:75em) {
+        font-size: 58%;
+        top:50%;
+    }
+    @media(max-width:56.25em) {
+        font-size: 52%;
+        top:50%;
+    }
+    @media(max-width:37.5em) {
+        font-size: 32%;
+        display: inline;
+        position: absolute;
+        top:54%;
+        left:50%;
+    }
+    @media(min-width:112.5em) {
+        font-size: 80%;
+    }  
+}
+
+.text {
+    margin-left: 9%;
+    font-size: 1.2rem;
+    width: 40%;
+    font-family: 'Lucida Console', "Lucida Console", serif;
+    h2{
+        text-align: center;
+    }
+    span{
+        font-weight: bolder;
+    }
+    p{
+        margin-top: 7%;
+        &:nth-child(4){
+            font-weight: bolder;
+        }
+    }
+    @media(max-width:37.5em) {
+        margin-top: 5%;
+        text-align: center;
+        width: 80%;
+    }
+}
